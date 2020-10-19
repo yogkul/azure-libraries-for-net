@@ -791,7 +791,7 @@ namespace Microsoft.Azure.Management.Compute.Fluent
             {
                 disk.Validate();
             }
-            string apiVersion = "2019-07-01";
+            string apiVersion = "2020-06-30";
             // Tracing
             bool _shouldTrace = ServiceClientTracing.IsEnabled;
             string _invocationId = null;

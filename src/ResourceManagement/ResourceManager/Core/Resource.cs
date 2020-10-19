@@ -31,6 +31,12 @@ namespace Microsoft.Azure.Management.ResourceManager.Fluent
         public string Location { get; set; }
 
         /// <summary>
+        /// Resource location
+        /// </summary>
+        [JsonProperty(PropertyName = "extendedLocation")]
+        public ExtendedLocation ExtendedLocation { get; set; }
+
+        /// <summary>
         /// Resource tags
         /// </summary>
         [JsonProperty(PropertyName = "tags")]

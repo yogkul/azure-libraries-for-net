@@ -8,6 +8,7 @@
 
 namespace Microsoft.Azure.Management.Storage.Fluent.Models
 {
+    using Microsoft.Azure.Management.ResourceManager.Fluent;
     using Microsoft.Rest;
     using Microsoft.Rest.Serialization;
     using Newtonsoft.Json;
@@ -182,6 +183,12 @@ namespace Microsoft.Azure.Management.Storage.Fluent.Models
         /// </summary>
         [JsonProperty(PropertyName = "properties.isHnsEnabled")]
         public bool? IsHnsEnabled { get; set; }
+
+        /// <summary>
+        /// Gets or sets the extended location.
+        /// </summary>
+        [JsonProperty(PropertyName = "extendedLocation")]
+        public ExtendedLocation ExtendedLocation { get; set; }
 
         /// <summary>
         /// Validate the object.
